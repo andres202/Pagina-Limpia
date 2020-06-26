@@ -1,3 +1,77 @@
+/*seccion-uno*/
+
+.container{
+    position: relative;
+    height: 500px;
+    background: #4c4c4c;
+    border: 10px solid #2c2c2c;
+}
+
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide_img img{
+    width: 95%;
+    height: 95%;
+}
+
+#i1, #i2, #i3{
+    display: none;
+}
+
+.pre, .nxt{
+    width: 8%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88, 88, 88, .4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre{
+    left: 0;
+}
+
+.nxt{
+    right: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three{
+    z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1, #i2:checked ~ .nav #dot2, #i3:checked ~ .nav #dot3{
+    background: #fff;
+}
+
 /*sección-dos*/
 
 .seccion-dos{
@@ -34,7 +108,7 @@
                          "entretencion5 entretencion6";
     grid-gap: 10px;
     background: #fff;
-    border: 15px solid #4F4949;
+    border: 10px solid #4F4949;
     padding: 0px 10px;
 }
 
@@ -79,7 +153,6 @@
     font-weight: bold;
     color: #000000;
     padding: 5px 0px;
-    text-align: justify;
 }
 
 .entretencion2{
@@ -155,7 +228,7 @@
                          "educacion2 educacion3";
     grid-gap: 10px;
     background: #4267b2;
-    padding: 15px;             
+    padding: 10px;             
 }
 
 @media only screen and (max-width: 575px) {
