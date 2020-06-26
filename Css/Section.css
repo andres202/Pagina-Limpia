@@ -102,7 +102,7 @@
 
 .entretencion{
     display: grid;
-    grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr 1fr;
+    grid-template: minmax(300px, auto) repeat(2, minmax(150px, auto)) / repeat(2, 1fr);
     grid-template-areas: "entretencion1 entretencion2"
                          "entretencion3 entretencion4"
                          "entretencion5 entretencion6";
@@ -115,7 +115,7 @@
 @media only screen and (max-width: 575px) {
     .entretencion{
         display: grid;
-        grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr;
+        grid-template: minmax(300px, auto) repeat(5, minmax(150px, auto)) / 1fr;
         grid-template-areas: "entretencion1"
                              "entretencion2"
                              "entretencion3"
@@ -223,7 +223,7 @@
 
 .educacion{
     display: grid;
-    grid-template: minmax(300px, auto) minmax(150px, auto) / 1fr 1fr;
+    grid-template: minmax(300px, auto) minmax(150px, auto) / repeat(2, 1fr);
     grid-template-areas: "educacion1 educacion1"
                          "educacion2 educacion3";
     grid-gap: 10px;
@@ -234,7 +234,7 @@
 @media only screen and (max-width: 575px) {
     .educacion{
         display: grid;
-        grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr;
+        grid-template: minmax(300px, auto) repeat(2, minmax(150px, auto)) / 1fr;
         grid-template-areas: "educacion1"
                              "educacion2"
                              "educacion3";
@@ -410,7 +410,7 @@ table tr:nth-child(n):not(:first-of-type){
 }
 
 table tr:nth-child(n):not(:first-of-type):not(:last-of-type){
-    border-bottom: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid #999999;
 }
 
 table tr:first-of-type > th:nth-child(n):not(:first-of-type){
@@ -438,4 +438,88 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
     .margen-tabla2-finanzas{
         margin-top: 0px;
     }
+}
+
+/*seccion-cuatro*/
+
+.seccion-cuatro{
+    display: grid;
+    grid-template: minmax(300px, auto) / 3fr 1fr;
+    grid-template-areas: "videos publicidad2";
+}
+
+@media only screen and (max-width: 991px){
+    .seccion-cuatro{
+        display: grid;
+        grid-template: repeat(2, minmax(300px, auto)) / 1fr;
+        grid-template-areas: "videos"
+                             " publicidad2";
+    }
+}
+
+.videos{
+    display: grid;
+    grid-template: repeat(2, minmax(150px, auto)) / repeat(2, 1fr);
+    grid-template-areas: "video1 video2"
+                         "video3 video4";
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 767px){
+    .videos{
+        display: grid;
+        grid-template: repeat(4, minmax(150px, auto)) / 1fr;
+        grid-template-areas: "video1"
+                             "video2"
+                             "video3"
+                             "video4";
+    }
+    iframe{
+        height: 370px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    iframe{
+        height: 280px;
+    }
+}
+
+.video1, .video2, .video3, .video4{
+    border-bottom: 1px solid #999999;
+}
+
+.titulo-recomendados-videos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.titulos-encabezado-videos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    background: #104e94;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.titulos-videos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 4px;
+}
+
+.texto-videos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 4px 0;
 }
