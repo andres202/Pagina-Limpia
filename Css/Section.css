@@ -1,3 +1,5 @@
+/*sección-dos*/
+
 .seccion-dos{
     display: grid;
     grid-template: minmax(400px, auto) minmax(40px, auto) minmax(300px, auto) / 3fr 1fr;
@@ -15,7 +17,6 @@
                              "separador"
                              "educacion"
                              "publicidad";
-        width: 100%;
     }
 }
 
@@ -50,7 +51,7 @@
     }
 }
 
-.imagen-titular-entretencion{
+.imagen-principal-entretencion{
     background: url("../Recursos/Imágenes/Festival_Cine_Logo_Definitivo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -103,25 +104,25 @@
     }
 }
 
-.imagen-entretencion{
+.imagen-noticias-entretencion{
     width: 200px;
     height: 140px;
     margin-right: 10px;
 }
 
-.titular-entretencion{
+.titular-noticias-entretencion{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     color: #000000;
 }
 
 @media only screen and (max-width: 767px) {
-    .titular-entretencion{
+    .titular-noticias-entretencion{
         padding-bottom: 10px;
     }
 }
 
-.noticia-entretencion{
+.entretencion3, .entretencion4{
     border-bottom: 1px solid #448AFF;
 }
 
@@ -260,36 +261,31 @@
     border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
-.imagen-educacion{
+.imagen-noticias-educacion{
     width: 210px;
     height: 140px;
     margin-right: 10px;
 }
 
-.titular-educacion{
+.titular-noticias-educacion{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
-    .titular-educacion{
+    .titular-noticias-educacion{
         padding-bottom: 5px;
     }
 }
 
 /*seccion-tres*/
 
-/*.seccion-finanzas-uno{
-    display: flex;
-    justify-content: space-between;
-}*/
-
-.contenedor-tabla-finanzas{
+.contenedor-tablas-finanzas{
     width: 100%;
 }
 
-.contenedor-titulo-tabla{
+.contenedor-titulo-tablas{
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
@@ -298,23 +294,23 @@
     margin-bottom: 10px;
 }
 
-.margen-top-finanzas{
+.margen-tabla3-finanzas, .margen-tabla4-finanzas{
     margin-top: 15px;
 }
 
-.margin-top-finanzas2{
+.margen-tabla2-finanzas{
     margin-top: 15px;
 }
 
-.titulo-tabla-uno{
+.titulo-tabla-uno, .titulo-tabla-tres{
     width: 50%;
 }
 
-.tabla-finanzas-uno{
+.tabla-superior-finanzas{
     height: 130px;
 }
 
-.tabla-finanzas-dos{
+.tabla-inferior-finanzas{
     height: 160px;
 }
 
@@ -344,6 +340,10 @@ table tr:nth-child(n):not(:first-of-type):not(:last-of-type){
     border-bottom: 1px solid rgb(153, 153, 153);
 }
 
+table tr:first-of-type > th:nth-child(n):not(:first-of-type){
+    text-align: left;
+}
+
 .iconos-finanzas{
     width: 18px;
     vertical-align: bottom;
@@ -355,14 +355,14 @@ table tr:nth-child(n):not(:first-of-type):not(:last-of-type){
 }
 
 @media only screen and (min-width: 768px) {
-    .seccion-finanzas-uno{
+    .seccion-superior-finanzas, .seccion-inferior-finanzas{
         display: flex;
         justify-content: space-between;
     }
-    .contenedor-tabla-finanzas{
+    .contenedor-tablas-finanzas{
         width: 49%;
     }
-    .margin-top-finanzas2{
+    .margen-tabla2-finanzas{
         margin-top: 0px;
     }
 }
