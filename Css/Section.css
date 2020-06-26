@@ -191,6 +191,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: #fff;
+    padding-bottom: 5px;
 }
 
 .texto-principal-educación{
@@ -234,12 +235,13 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         color: #fff;
+        padding-bottom: 0px;
     }
     
     .texto-principal-educación{
         width: 38%;
         position: relative;
-        top: 25%;
+        top: 22%;
         left: 60%;
         font-family: 'Montserrat', sans-serif;
         font-size: 0.9rem;
@@ -273,5 +275,94 @@
 @media only screen and (max-width: 767px) {
     .titular-educacion{
         padding-bottom: 5px;
+    }
+}
+
+/*seccion-tres*/
+
+/*.seccion-finanzas-uno{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.contenedor-tabla-finanzas{
+    width: 100%;
+}
+
+.contenedor-titulo-tabla{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #405C8C;
+    margin-bottom: 10px;
+}
+
+.margen-top-finanzas{
+    margin-top: 15px;
+}
+
+.margin-top-finanzas2{
+    margin-top: 15px;
+}
+
+.titulo-tabla-uno{
+    width: 50%;
+}
+
+.tabla-finanzas-uno{
+    height: 130px;
+}
+
+.tabla-finanzas-dos{
+    height: 160px;
+}
+
+table{
+    width: 100%;    
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+table tr:first-of-type{
+    color: #fff;
+    background: #257DC0;
+}
+
+table tr:last-of-type{
+    border-bottom: 2px solid #257DC0;
+}
+
+table tr:nth-child(n):not(:first-of-type){
+    color: #405C8C;
+    text-align: left;
+}
+
+table tr:nth-child(n):not(:first-of-type):not(:last-of-type){
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.iconos-finanzas{
+    width: 18px;
+    vertical-align: bottom;
+}
+
+.iconos-finanzas-top{
+    width: 18px;
+    vertical-align: top;
+}
+
+@media only screen and (min-width: 768px) {
+    .seccion-finanzas-uno{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedor-tabla-finanzas{
+        width: 49%;
+    }
+    .margin-top-finanzas2{
+        margin-top: 0px;
     }
 }
