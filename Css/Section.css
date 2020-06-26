@@ -1,0 +1,277 @@
+.seccion-dos{
+    display: grid;
+    grid-template: minmax(400px, auto) minmax(40px, auto) minmax(300px, auto) / 3fr 1fr;
+    grid-template-areas: "entretencion publicidad"
+                            "separador publicidad"
+                            "educacion publicidad";
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .seccion-dos{
+        display: grid;
+        grid-template: minmax(400px, auto) minmax(40px, auto) minmax(300px, auto) minmax(400px, auto) / 1fr;
+        grid-template-areas: "entretencion"
+                             "separador"
+                             "educacion"
+                             "publicidad";
+        width: 100%;
+    }
+}
+
+.publicidad{
+    grid-area: publicidad;
+}
+
+/*Entretención*/
+
+.entretencion{
+    display: grid;
+    grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr 1fr;
+    grid-template-areas: "entretencion1 entretencion2"
+                         "entretencion3 entretencion4"
+                         "entretencion5 entretencion6";
+    grid-gap: 10px;
+    background: #fff;
+    border: 15px solid #4F4949;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 575px) {
+    .entretencion{
+        display: grid;
+        grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr;
+        grid-template-areas: "entretencion1"
+                             "entretencion2"
+                             "entretencion3"
+                             "entretencion4"
+                             "entretencion5"
+                             "entretencion6";
+    }
+}
+
+.imagen-titular-entretencion{
+    background: url("../Recursos/Imágenes/Festival_Cine_Logo_Definitivo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.entretencion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.titular-principal-entretencion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 5px 0px;
+}
+
+.texto-principal-entretencion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 5px 0px;
+    text-align: justify;
+}
+
+.entretencion2{
+    border-bottom: 1px solid #448AFF;
+}
+
+@media only screen and (min-width: 576px) {
+    .entretencion1{
+        border-bottom: 1px solid #448AFF;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .entretencion5{
+        border-bottom: 1px solid #448AFF;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .entretencion3, .entretencion4, .entretencion5, .entretencion6{
+        display: flex;
+    }
+}
+
+.imagen-entretencion{
+    width: 200px;
+    height: 140px;
+    margin-right: 10px;
+}
+
+.titular-entretencion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+    .titular-entretencion{
+        padding-bottom: 10px;
+    }
+}
+
+.noticia-entretencion{
+    border-bottom: 1px solid #448AFF;
+}
+
+/*separador*/
+
+.separador{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #F31600;
+    margin-top: 10px;
+}
+
+.texto-separador{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F31600;
+}
+
+.icono-separador{
+    width: 30px;
+}
+
+/*Educación*/
+
+.educacion{
+    display: grid;
+    grid-template: minmax(300px, auto) minmax(150px, auto) / 1fr 1fr;
+    grid-template-areas: "educacion1 educacion1"
+                         "educacion2 educacion3";
+    grid-gap: 10px;
+    background: #4267b2;
+    padding: 15px;             
+}
+
+@media only screen and (max-width: 575px) {
+    .educacion{
+        display: grid;
+        grid-template: minmax(300px, auto) minmax(150px, auto) minmax(150px, auto) / 1fr;
+        grid-template-areas: "educacion1"
+                             "educacion2"
+                             "educacion3";
+    }
+}
+
+.educacion1{
+    grid-area: educacion1;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.contenedor-imagen-educacion{
+    height: 250px;
+}
+
+.imagen-principal-educacion{
+    width: 100%;
+    height: 250px;
+}
+
+@media only screen and (max-width: 575px) {
+    .contenedor-titular-educacion{
+        padding: 5px 0px;
+    }
+}
+
+.titular-principal-educacion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.texto-principal-educación{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media only screen and (min-width: 576px) {
+    .educacion1{
+        position: relative;
+        height: 330px;
+    }
+
+    .contenedor-imagen-educacion{
+        height: 320px;
+    }
+
+    .imagen-principal-educacion{
+        position: relative;
+        width: 85%;
+        height: 320px;
+    }
+    
+    .contenedor-titular-educacion{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 320px;    
+        background: linear-gradient(to right,rgba(255,0,0,0)60%,rgba(0,0,0,1)85%);
+        padding-bottom: 0px;
+    }
+    
+    .titular-principal-educacion{
+        width: 38%;
+        position: relative;
+        top: 20%;
+        left: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    
+    .texto-principal-educación{
+        width: 38%;
+        position: relative;
+        top: 25%;
+        left: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .educacion2, .educacion3{
+        display: flex;
+    }
+}
+
+.educacion2, .educacion3{
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.imagen-educacion{
+    width: 210px;
+    height: 140px;
+    margin-right: 10px;
+}
+
+.titular-educacion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .titular-educacion{
+        padding-bottom: 5px;
+    }
+}
