@@ -342,7 +342,7 @@
 
 .titular-noticias-educacion{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #fff;
 }
 
@@ -474,15 +474,6 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
                              "video3"
                              "video4";
     }
-    iframe{
-        height: 370px;
-    }
-}
-
-@media only screen and (max-width: 575px){
-    iframe{
-        height: 280px;
-    }
 }
 
 .video1, .video2, .video3, .video4{
@@ -506,6 +497,29 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
     padding: 4px;
     margin-bottom: 10px;
 }
+
+.dimension-videos{
+    height: 270px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .dimension-videos{
+        height: 380px !important;
+    }
+}
+
+/*@media only screen and (max-width: 575px){
+    .dimension-videos{
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .dimension-videos{
+        height: 270px;
+    }
+}*/
 
 .titulos-videos{
     font-family: 'Montserrat', sans-serif;
