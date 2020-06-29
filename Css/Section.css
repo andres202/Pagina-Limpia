@@ -1,6 +1,161 @@
 /*seccion-uno*/
 
-.container{
+@media only screen and (min-width: 1100px){
+    .contenedor-imagen-deportes1{ 
+        height: 330px;    
+    }    
+    .imagen-deportes1{
+        width: 100%;
+        height: 330px;
+    }
+    .contenedor-imagen-deportes2{
+        width: 55%;
+        height: 185px;
+    }
+    .contenedor-titular-deportes2{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px){
+    .contenedor-imagen-deportes2{
+        width: 60%;
+        height: 160px;
+    }
+    
+    .contenedor-titular-deportes2{
+        width: 40%;
+    }
+
+    .contenedor-imagen-deportes1{ 
+        height: 260px;    
+    }
+    
+    .imagen-deportes1{
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1099px){
+    .contenedor-imagen-deportes2{
+        width: 55%;
+        height: 185px;
+    }
+    
+    .contenedor-titular-deportes2{
+        width: 45%;
+    }
+
+    .contenedor-imagen-deportes1{ 
+        height: 310px;    
+    }
+    
+    .imagen-deportes1{
+        width: 100%;
+        height: 310px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .deportes{
+        display: grid;
+        grid-template: repeat(3, minmax(150px, auto)) / repeat(2, 1fr);
+        grid-template-areas: "deportes1 deportes1"
+                             "deportes2 deportes3"
+                             "deportes4 deportes5";
+    }
+    .deportes1{
+        /*display: flex;*/
+    }
+    .contenedor-imagen-deportes1{
+        width: 50%;
+    }
+    .contenedor-titular-deportes1{
+        width: 50%;
+    }
+    .imagen-deportes1{
+        width: 100%;
+    }
+}
+
+.deportes{
+    display: grid;
+    grid-template: repeat(5, minmax(150px, auto)) / 1fr;
+    grid-template-areas: "deportes1"
+                         "deportes2"
+                         "deportes3" 
+                         "deportes4"
+                         "deportes5";
+}
+.contenedor-imagen-deportes1{
+    width: 100%;
+    height: 280px;
+}
+.guau{
+    background: url("../Recursos/Imágenes/Taekwondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+.contenedor-titular-deportes1{
+    width: 100%;
+}
+.texto-deportes1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #D1D1D1;
+    padding-top: 5px;
+}
+
+.deportes{
+    /*display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas: "deportes1 deportes3"
+                         "deportes1 deportes4"
+                         "deportes2 deportes5";*/
+    column-gap: 10px;
+    row-gap: 10px;
+    background: #075584;
+    padding: 10px;
+}
+
+.deportes1{
+    grid-area: deportes1;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+
+.titular-deportes1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #D1D1D1;
+    padding-top: 5px;
+}
+
+.deportes2, .deportes3, .deportes4, .deportes5{
+    /*display: flex;*/
+    padding-top: 10px;
+    border-top: 1px solid gray;
+}
+
+.imagen-deportes2{
+    width: 100%;
+    height: 100%;
+}
+
+.titular-deportes2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #D1D1D1;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+/*.container{
     position: relative;
     height: 500px;
     background: #4c4c4c;
@@ -14,8 +169,8 @@
 }
 
 .slide_img img{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
 }
 
 #i1, #i2, #i3{
@@ -30,6 +185,15 @@
     background: rgba(88, 88, 88, .4);
     z-index: 99;
     cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uno{
+    vertical-align: middle;
 }
 
 .pre{
@@ -70,7 +234,203 @@
 
 #i1:checked ~ .nav #dot1, #i2:checked ~ .nav #dot2, #i3:checked ~ .nav #dot3{
     background: #fff;
+}*/
+/*@media only screen and (min-width: 992px){
+    .contenedor-cuerpo-carrusel{
+        display: grid;
+        grid-template: minmax(100px, auto) minmax(400px, auto) / repeat(2, 50%);
+        grid-template-areas: "encabezado encabezado"
+                          "imagecarrusel textocarrusel";
+        column-gap: 20px;
+    }
+    .encabezado{
+        grid-area: encabezado;
+    }
+    .imagecarrusel{
+        height: 430px;
+    }
 }
+
+@media only screen and (max-width: 991px){
+    .contenedor-cuerpo-carrusel{
+        display: grid;
+        grid-template: minmax(100px, auto) minmax(400px, auto) minmax(400px, auto) / 1fr;
+        grid-template-areas: "encabezado"
+                          "imagecarrusel"
+                           "textocarrusel";
+    
+    }
+    .encabezado{
+        grid-area: encabezado;
+    }
+    .imagecarrusel{
+        
+    }
+}
+
+.seccion-uno{
+    height: 1000px;
+    display: flex;    
+    background: #4267b2;
+}
+
+.titular-deportes{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.imagecarrusel{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-principal-deportes{
+    
+}
+
+.texto-imagen-carrusel{    
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    color: #000000;
+    background: #F3F3F3;
+    padding: 2px 5px;
+}
+
+
+
+.texto-creditos-carrusel{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.texto-noticias-carrusel{
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.container-all{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}*/
 
 /*sección-dos*/
 
@@ -78,7 +438,7 @@
     display: grid;
     grid-template: minmax(400px, auto) minmax(300px, auto) / 3fr 1fr;
     grid-template-areas: "contenedor-entretencion publicidad"
-                         "contenedor-educacion publicidad";
+                            "contenedor-educacion publicidad";
     width: 100%;
 }
 
@@ -450,15 +810,15 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
 .seccion-cuatro{
     display: grid;
     grid-template: minmax(300px, auto) / 3fr 1fr;
-    grid-template-areas: "videos publicidad2";
+    grid-template-areas: "contenedor-videos publicidad2";
 }
 
 @media only screen and (max-width: 991px){
     .seccion-cuatro{
         display: grid;
         grid-template: repeat(2, minmax(300px, auto)) / 1fr;
-        grid-template-areas: "videos"
-                             " publicidad2";
+        grid-template-areas: "contenedor-videos"
+                             "publicidad2";
     }
 }
 
