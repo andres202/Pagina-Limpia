@@ -1,63 +1,37 @@
 /*seccion-uno*/
 
-@media only screen and (min-width: 1100px){
-    .contenedor-imagen-deportes1{ 
-        height: 330px;    
-    }    
-    .imagen-deportes1{
+@media only screen and (max-width: 575px){
+    .deportes{
+        display: grid;
+        grid-template: repeat(5, minmax(150px, auto)) / 1fr;
+        grid-template-areas: "deportes1"
+                             "deportes2"
+                             "deportes3" 
+                             "deportes4"
+                             "deportes5";
+    }
+    .contenedor-imagen-deportes1{
         width: 100%;
-        height: 330px;
+        height: 280px;
     }
-    .contenedor-imagen-deportes2{
-        width: 55%;
-        height: 185px;
+    .contenedor-titular-deportes1{
+        width: 100%;
     }
-    .contenedor-titular-deportes2{
-        width: 45%;
+    .titular-deportes1{
+        padding-top: 5px;
+    }
+    .texto-deportes1{
+        display: block;
+    }
+    .contenedor-imagen-deportes{
+        height: 280px;
+    }
+    .titular-deportes2{
+        padding-top: 5px;
     }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 900px){
-    .contenedor-imagen-deportes2{
-        width: 60%;
-        height: 160px;
-    }
-    
-    .contenedor-titular-deportes2{
-        width: 40%;
-    }
-
-    .contenedor-imagen-deportes1{ 
-        height: 260px;    
-    }
-    
-    .imagen-deportes1{
-        width: 100%;
-        height: 260px;
-    }
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1099px){
-    .contenedor-imagen-deportes2{
-        width: 55%;
-        height: 185px;
-    }
-    
-    .contenedor-titular-deportes2{
-        width: 45%;
-    }
-
-    .contenedor-imagen-deportes1{ 
-        height: 310px;    
-    }
-    
-    .imagen-deportes1{
-        width: 100%;
-        height: 310px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 576px) and (max-width: 767px){
     .deportes{
         display: grid;
         grid-template: repeat(3, minmax(150px, auto)) / repeat(2, 1fr);
@@ -66,56 +40,95 @@
                              "deportes4 deportes5";
     }
     .deportes1{
-        /*display: flex;*/
+        display: flex;
     }
     .contenedor-imagen-deportes1{
         width: 50%;
+        height: 200px;
+        padding-right: 10px;
     }
     .contenedor-titular-deportes1{
         width: 50%;
     }
-    .imagen-deportes1{
+    .texto-deportes1{
+        display: block;
+    }
+    .contenedor-imagen-deportes{
+        height: 180px;
+    }
+    .titular-deportes2{
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px){
+    .deportes{
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-template-areas: "deportes1 deportes3"
+                             "deportes1 deportes4"
+                             "deportes2 deportes5";
+    }
+    .contenedor-imagen-deportes1{
         width: 100%;
+        height: 260px;
+    }
+    .titular-deportes1{
+        padding-top: 5px;
+    }
+    .texto-deportes1{
+        display: none;
+    }
+    .deportes2, .deportes3, .deportes4, .deportes5{
+        display: flex;
+    }
+    .contenedor-imagen-deportes{
+        width: 60%;
+        height: 150px;
+    }
+    .contenedor-titular-deportes{
+        width: 40%;
+    }
+    .titular-deportes2{
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    .deportes{
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-template-areas: "deportes1 deportes3"
+                             "deportes1 deportes4"
+                             "deportes2 deportes5";
+    }
+    .contenedor-imagen-deportes1{
+        width: 100%;
+        height: 320px;
+    }
+    .titular-deportes1{
+        padding-top: 5px;
+    }
+    .texto-deportes1{
+        display: none;
+    }
+    .deportes2, .deportes3, .deportes4, .deportes5{
+        display: flex;
+    }
+    .contenedor-imagen-deportes{
+        width: 55%;
+        height: 170px;
+    }
+    .contenedor-titular-deportes{
+        width: 45%;
+    }
+    .titular-deportes2{
+        padding-left: 10px;
     }
 }
 
 .deportes{
     display: grid;
-    grid-template: repeat(5, minmax(150px, auto)) / 1fr;
-    grid-template-areas: "deportes1"
-                         "deportes2"
-                         "deportes3" 
-                         "deportes4"
-                         "deportes5";
-}
-.contenedor-imagen-deportes1{
-    width: 100%;
-    height: 280px;
-}
-.guau{
-    background: url("../Recursos/Imágenes/Taekwondo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-}
-.contenedor-titular-deportes1{
-    width: 100%;
-}
-.texto-deportes1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #D1D1D1;
-    padding-top: 5px;
-}
-
-.deportes{
-    /*display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    grid-template-areas: "deportes1 deportes3"
-                         "deportes1 deportes4"
-                         "deportes2 deportes5";*/
     column-gap: 10px;
     row-gap: 10px;
     background: #075584;
@@ -128,16 +141,66 @@
     border-top: 1px solid gray;
 }
 
+.deportes2{
+    grid-area: deportes2;
+}
+
+.imagen-deportes1{
+    background: url("../Recursos/Imágenes/Taekwondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
 .titular-deportes1{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
     color: #D1D1D1;
+}
+
+.texto-deportes1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #D1D1D1;
     padding-top: 5px;
 }
 
+.imagen-deportes2{
+    background: url("../Recursos/Imágenes/Futbol_Amateur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%
+}
+
+.imagen-deportes3{
+    background: url("../Recursos/Imágenes/Tenis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%
+}
+
+.imagen-deportes4{
+    background: url("../Recursos/Imágenes/Michael_Jordan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%
+}
+
+.imagen-deportes5{
+    background: url("../Recursos/Imágenes/Bundesliga.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100%
+}
+
 .deportes2, .deportes3, .deportes4, .deportes5{
-    /*display: flex;*/
     padding-top: 10px;
     border-top: 1px solid gray;
 }
@@ -152,7 +215,6 @@
     font-size: 1rem;
     color: #D1D1D1;
     font-weight: 400;
-    padding-left: 10px;
 }
 
 /*.container{
