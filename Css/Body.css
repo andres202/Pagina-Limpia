@@ -15,7 +15,7 @@ html{
 }
 
 .contenedor{
-    width: 98%;
+    padding: 0 10px;
     max-width: 1300px;
     margin: 0 auto;
 }

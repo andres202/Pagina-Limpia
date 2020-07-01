@@ -348,7 +348,7 @@
     display: flex;
     justify-content: space-between;
     border-top: 2px solid #F31600;
-    margin-top: 10px;
+    margin: 20px 0 10px 0;
 }
 
 .texto-separador{
@@ -513,8 +513,9 @@
 
 .contenedor-titulo-tablas{
     display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
     color: #405C8C;
     margin-bottom: 10px;
 }
@@ -542,12 +543,13 @@
 table{
     width: 100%;    
     border-collapse: collapse;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
 }
 
 table th{
-    font-weight: normal;
+    font-weight: bold;
 }
 
 table tr:first-of-type{
@@ -672,7 +674,7 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
 
 .titulos-videos{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #000000;
     border-bottom: 1px solid #999999;
@@ -681,7 +683,7 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
 
 .texto-videos{
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #000;
     padding: 4px 0;
     line-height: 1.25;
