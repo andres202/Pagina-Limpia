@@ -47,6 +47,23 @@ nav label:hover{
 
 .menu li img{
     display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.margen-nav-separador-superior{
+    height: 20px;
+    background: #fff;
+}
+
+.margen-nav-separador-inferior{
+    height: 10px;
+    background: #fff;
+}
+
+.separador-deportes{
+    background: #fff;
+    margin: 0px !important;
 }
 
 @media only screen and (max-width: 767px){
@@ -55,16 +72,23 @@ nav label:hover{
     }
     .menu{
         position: absolute;
-        width: 50%;
+        width: 93%;
         background: #253C68;
-        margin-left: -50%;
+        margin-left: -100%;
         transition: 0.5s;
+        overflow: hidden;
     }
     .menu ul{
         flex-direction: column;
     }
     #btn-menu:checked ~ .menu{
         margin: 0;    
+    }
+    .margen-nav-separador-superior{
+        transition: 0.5s;
+    }
+    #btn-menu:checked ~ .margen-nav-separador-superior{
+        margin-top: 246px;
     }
     .menu li a{
         padding: 15px 0;
@@ -79,5 +103,14 @@ nav label:hover{
         display: block;
         padding-top: 10px;
         padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .menu{
+        width: 96%;
+    }
+    #btn-menu:checked ~ .margen-nav-separador-superior{
+        margin-top: 251px;
     }
 }
