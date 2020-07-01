@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Css/Body.css">
+    <link rel="stylesheet" href="Css/Nav.css">
     <link rel="stylesheet" href="Css/Section.css">
     <link rel="stylesheet" href="Css/Aside.css">
     <link rel="stylesheet" href="Css/Footer.css">
@@ -17,10 +18,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <div class="contenedor">
+        <br>
+        <nav id="portada">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img class="icono-menu-nav" src="Recursos/Íconos/Menú.png"></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="#deportes">DEPORTES</a></li>
+                    <li><a href="#entretencion">ENTRETENCIÓN</a></li>
+                    <li><a href="#educacion">EDUCACIÓN</a></li>
+                    <li><a href="#finanzas">FINANZAS</a></li>
+                    <li><a href="#videos">VIDEOS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="separador" id="deportes">                
+            <h2 class="texto-separador">
+            Deportes</h2>
+            <a href="#portada"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
+        </div>
         <div class="seccion-uno">
             <div class="deportes">
                 <div class="deportes1">
@@ -72,10 +93,10 @@
         </div>
         <div class="seccion-dos">
             <div class="contenedor-titulo-entretencion">
-                <div class="separador">
+                <div class="separador" id="entretencion">
                     <h2 class="texto-separador">
                     Entretención</h2>
-                    <a href="#"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
+                    <a href="#portada"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
                 </div>
             </div>
             <div class="vacio"></div>
@@ -131,10 +152,10 @@
             </div>
             <!--Educación-->        
             <div class="contenedor-educacion">
-                <div class="separador">                
-                    <h2 class="texto-separador" id="Educación">
+                <div class="separador" id="educacion">                
+                    <h2 class="texto-separador">
                     Educación</h2>
-                    <a href="#"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
+                    <a href="#portada"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
                 </div>
                 <div class="educacion">
                     <div class="educacion1">
@@ -206,10 +227,10 @@
             </div>
         </div>
         <!--Finanzas-->
-        <div class="separador">                
-            <h2 class="texto-separador" id="Educación">
+        <div class="separador" id="finanzas">                
+            <h2 class="texto-separador">
             Finanzas</h2>
-            <a href="#"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
+            <a href="#portada"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
         </div>
         <div class="seccion-tres">
             <div class="seccion-superior-finanzas">
@@ -370,10 +391,10 @@
         </div>
         <div class="seccion-cuatro">
             <div class="contenedor-titulo-videos">
-                <div class="separador">                
-                    <h2 class="texto-separador" id="Educación">
+                <div class="separador" id="videos">                
+                    <h2 class="texto-separador">
                     Videos</h2>
-                    <a href="#"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
+                    <a href="#portada"><img class="icono-separador" src="Recursos/Íconos/House.png"></a>
                 </div>
             </div>
             <div class="vacio-inferior">
@@ -381,14 +402,14 @@
             <div class="contenedor-videos">
                 <div class="videos">
                     <div class="video1">                
-                        <p class="titulos-encabezado-videos">Documentales</p>
+                        <p class="titulos-encabezado-videos">Música</p>
                         <iframe class="dimension-videos" src="https://www.youtube.com/embed/SFoLVvgd9E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p class="titulos-videos">Orion Oh Música (Video)</p>
                         <p class="texto-videos">Tema dedicado a el sentimiento, el cual une el alma hacia otras dimensiones. 
                         Orion fue una banda de Rock Sinfónico Progresivo que surge en Concepción en 1990.</p>
                     </div>
                     <div class="video2">
-                        <p class="titulos-encabezado-videos">Música</p>                    
+                        <p class="titulos-encabezado-videos">Documentales</p>                    
                         <iframe class="dimension-videos" src="https://www.youtube.com/embed/a5V6gdu5ih8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p class="titulos-videos">Lion Attacked by Clan of Hyenas | BBC Earth</p>
                         <p class="texto-videos">Clip extendido de Rojo el león encontrándose rodeado por un clan de más de 
@@ -441,7 +462,7 @@
                         <p>EN LA CALLE</p>
                     </div>
                 </div>
-                <div class="vacioxxx"></div>
+                <!--<div class="vacioxxx"></div>-->
             </div>
         </div>
     </div>
@@ -458,27 +479,27 @@
         <div class="footer2">
             <ul>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">PORTADA</a>
+                    <a class="texto-enlaces-footer2" href="#portada">PORTADA</a>
                 </li>
                 <li class="separador-footer2"></li>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">DEPORTES</a>
+                    <a class="texto-enlaces-footer2" href="#deportes">DEPORTES</a>
                 </li>
                 <li class="separador-footer2"></li>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">ENTRETENCIÓN</a>
+                    <a class="texto-enlaces-footer2" href="#entretencion">ENTRETENCIÓN</a>
                 </li>
                 <li class="separador-footer2"></li>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">EDUCACIÓN</a>
+                    <a class="texto-enlaces-footer2" href="#educacion">EDUCACIÓN</a>
                 </li>
                 <li class="separador-footer2"></li>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">FINANZAS</a>
+                    <a class="texto-enlaces-footer2" href="#finanzas">FINANZAS</a>
                 </li>
                 <li class="separador-footer2"></li>
                 <li>
-                    <a class="texto-enlaces-footer2" href="#">VIDEOS</a>
+                    <a class="texto-enlaces-footer2" href="#videos">VIDEOS</a>
                 </li>
             </ul>            
         </div>

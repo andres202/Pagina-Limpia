@@ -201,15 +201,15 @@
 @media only screen and (min-width: 992px){
     .publicidad-inferior{
         display: grid;
-        grid-template: minmax(380px, auto) minmax(280px, auto) 1fr / 1fr;
+        grid-template: /*minmax(380px, auto) minmax(280px, auto)*/ minmax(450px,auto) 1fr / 1fr;
         grid-template-areas: "publicidad-inferior1"
-                   "publicidad-inferior2"
-                   "vacioxxx";
+                   "publicidad-inferior2";
+                   /*"vacioxxx"*/
         row-gap: 10px;
         padding-left: 10px;
     }
     .cuerpo-publicidad-inferior1{
-        min-height: 400px;
+        min-height: 450px;
     }
     .publicidad-inferior2{
         min-height: 300px;
@@ -219,10 +219,10 @@
 @media only screen and (min-width: 576px) and (max-width: 991px){
     .publicidad-inferior{
         display: grid;
-        grid-template-rows: minmax(400, auto) minmax(100px, auto);
+        grid-template-rows: minmax(400, auto) /*minmax(100px, auto)*/;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "publicidad-inferior1 publicidad-inferior2"
-                             "publicidad-inferior1 vacioxxx";
+        grid-template-areas: "publicidad-inferior1 publicidad-inferior2";
+                             /*"publicidad-inferior1 vacioxxx";*/
         row-gap: 10px;
         column-gap: 10px;
     }
@@ -330,7 +330,8 @@
 
 .contenedor1-publicidad-inferior2{
     position: absolute;
-    top: 20%;left: 2%;
+    top: 30%;
+    left: 2%;
 }
 
 .titulos-publicidad-inferior2{
