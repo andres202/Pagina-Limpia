@@ -1,0 +1,364 @@
+/*Publicidad Superior*/
+
+.publicidad{
+    grid-area: publicidad;
+    display: grid;
+    grid-template: minmax(250px, auto) 1fr minmax(250px, auto) / 1fr;
+    grid-template-areas: "publicidad1"
+                         "publicidad2"
+                         "publicidad3";
+    row-gap: 10px;
+    padding-left: 10px;
+}
+
+.publicidad1{
+    background: #C41114;
+    padding: 20px 0;
+}
+
+.contenedor-superior-publicidad1{
+    display: flex;
+}
+
+.texto-superior-publicidad1{
+    width: 60%;
+    height: 100px;
+}
+
+.texto-portal-publicidad1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.texto-coronel-publicidad1{
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.contenedor-imagen-publicidad1{
+    height: 100px;
+}
+
+.imagen-publicidad1{
+    width: 80px;
+    height: 100px;
+}
+
+.texto-conjunto-publicidad1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.texto-visite-publicidad1, .texto-piloto-publicidad1{
+    font-family: 'Lato', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-piloto-publicidad1{
+    line-height: .8;
+}
+
+.publicidad2{
+    grid-area: publicidad2;
+    background: url("../Recursos/Imágenes/Casa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 14s infinite alternate;
+}
+
+@keyframes slider{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: right center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .publicidad{
+        grid-area: publicidad;
+        display: grid;
+        grid-template: repeat(2, minmax(250px, auto)) / repeat(3, 1fr);
+        grid-template-areas: "publicidad1 publicidad2 publicidad2"
+                             "publicidad3 publicidad2 publicidad2";
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .publicidad{
+        grid-area: publicidad;
+        display: grid;
+        grid-template: repeat(2, minmax(250px, auto)) / repeat(2, 1fr);
+        grid-template-areas: "publicidad1 publicidad2"
+                             "publicidad3 publicidad2";
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .publicidad{
+        grid-area: publicidad;
+        display: grid;
+        grid-template: minmax(300px, auto) minmax(650px, auto) minmax(350px, auto) / 1fr;
+        grid-template-areas: "publicidad1"
+                             "publicidad2"
+                             "publicidad3";
+        row-gap: 10px;
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+.publicidad3{
+    position: relative;
+    background: url("../Recursos/Imágenes/Niños_Estudiando.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor-superior-publicidad3{
+    position: absolute;
+    top: 28%;
+    left: 4%;
+}
+
+.texto-titulos-publicidad3{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: bolder;
+    color: #C9C9C9;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+.texto-subtitulos-publicidad3{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #C9C9C9;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+.texto-matriculas-publicidad3{
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    font-weight: bolder;
+    color: #232399;
+    background-color: #E0E01C;
+    padding: 3px;
+}
+
+.contenedor-subimagen-publicidad3{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    background: url("../Recursos/Imágenes/We_Tripantu.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+}
+
+.contenedor-inferior-publicidad3{
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    font-family: 'Plaster', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0B570B;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 1;
+}
+
+/*Publicidad Inferior*/
+
+@media only screen and (min-width: 992px){
+    .publicidad-inferior{
+        display: grid;
+        grid-template: minmax(380px, auto) minmax(280px, auto) 1fr / 1fr;
+        grid-template-areas: "publicidad-inferior1"
+                   "publicidad-inferior2"
+                   "vacioxxx";
+        row-gap: 10px;
+        padding-left: 10px;
+    }
+    .cuerpo-publicidad-inferior1{
+        min-height: 400px;
+    }
+    .publicidad-inferior2{
+        min-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    .publicidad-inferior{
+        display: grid;
+        grid-template-rows: minmax(400, auto) minmax(100px, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "publicidad-inferior1 publicidad-inferior2"
+                             "publicidad-inferior1 vacioxxx";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .publicidad-inferior1{
+        grid-area: publicidad-inferior1;
+    }
+    .cuerpo-publicidad-inferior1{
+        min-height: 450px;
+    }
+    .publicidad-inferior2{
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .publicidad-inferior{
+        display: grid;
+        grid-template-rows: minmax(550, auto) minmax(450px, auto) minmax(100px, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas: "publicidad-inferior1"
+                             "publicidad-inferior2"
+                             "vacioxxx";
+        row-gap: 10px;
+    }
+    .cuerpo-publicidad-inferior1{
+        min-height: 550px;
+    }
+    .publicidad-inferior2{
+        min-height: 400px;
+    }
+}
+
+.cuerpo-publicidad-inferior1{
+    background: url("../Recursos/Imágenes/Cascada.jpg");
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.contenedor-texto-publicidad-inferior1{
+    padding-left: 5px;
+}
+
+.titulo-publicidad-inferior1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    color: #D67E19;
+    text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.trekking-publicidad-inferior1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.km-publicidad-inferior1{
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.cascada-publicidad-inferior1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.fecha-publicidad-inferior1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.hora-publicidad-inferior1{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1;
+}
+
+.texto-inferior-publicidad-inferior1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    background-color: #296D29;
+    text-align: center;   
+}
+
+.publicidad-inferior2{
+    position: relative;
+    background: url("../Recursos/Imágenes/Perro.jpg");
+    background-size: cover;
+    background-position: right;    
+}
+
+.contenedor1-publicidad-inferior2{
+    position: absolute;
+    top: 20%;left: 2%;
+}
+
+.titulos-publicidad-inferior2{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #409AB1;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+.subtitulos-publicidad-inferior2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #409AB1;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+.contenedor2-publicidad-inferior2{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #BDBA21;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
