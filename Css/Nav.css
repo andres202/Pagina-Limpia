@@ -23,7 +23,7 @@ nav label:hover{
 }
 
 .menu ul{
-    display: flex;    
+    display: flex;
 }
 
 .menu li{
@@ -38,8 +38,8 @@ nav label:hover{
 .menu li a{
     display: block;
     padding: 20px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
     font-weight: bold;
     color: #fff;
     letter-spacing: 1px;
@@ -76,7 +76,6 @@ nav label:hover{
         background: #253C68;
         margin-left: -100%;
         transition: 0.5s;
-        overflow: hidden;
     }
     .menu ul{
         flex-direction: column;
@@ -88,7 +87,7 @@ nav label:hover{
         transition: 0.5s;
     }
     #btn-menu:checked ~ .margen-nav-separador-superior{
-        margin-top: 246px;
+        margin-top: 236px;
     }
     .menu li a{
         padding: 15px 0;
@@ -109,8 +108,5 @@ nav label:hover{
 @media only screen and (min-width: 576px) and (max-width: 767px){
     .menu{
         width: 96%;
-    }
-    #btn-menu:checked ~ .margen-nav-separador-superior{
-        margin-top: 251px;
     }
 }
