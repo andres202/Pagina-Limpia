@@ -51,19 +51,9 @@ nav label:hover{
     height: 30px;
 }
 
-.margen-nav-separador-superior{
+.margen-inferior-nav{
     height: 20px;
     background: #fff;
-}
-
-.margen-nav-separador-inferior{
-    height: 10px;
-    background: #fff;
-}
-
-.separador-deportes{
-    background: #fff;
-    margin: 0px !important;
 }
 
 @media only screen and (max-width: 767px){
@@ -72,41 +62,38 @@ nav label:hover{
     }
     .menu{
         position: absolute;
-        width: 93%;
+        top: 50px;
+        left: 5px;
+        right: 5px;
+        height: 0;
+        overflow: hidden;
         background: #253C68;
-        margin-left: -100%;
-        transition: 0.5s;
+        transition: 0.5s;    
     }
     .menu ul{
         flex-direction: column;
     }
     #btn-menu:checked ~ .menu{
-        margin: 0;    
+        height: 235px;
     }
-    .margen-nav-separador-superior{
+    .margen-inferior-nav{
         transition: 0.5s;
     }
-    #btn-menu:checked ~ .margen-nav-separador-superior{
-        margin-top: 236px;
-    }
-    .menu li a{
-        padding: 15px 0;
-        margin-right: auto;
+    #btn-menu:checked ~ .margen-inferior-nav{
+        margin-top: 235px;
     }
     .menu li{
         display: flex;
         padding-left: 10px;
         border-top: 1px solid #fff;
     }
+    .menu li a{
+        padding: 15px 0;
+        margin-right: auto;
+    }
     .menu li img{
         display: block;
-        padding-top: 10px;
+        padding-top: 8px;
         padding-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .menu{
-        width: 96%;
     }
 }

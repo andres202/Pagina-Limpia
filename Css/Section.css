@@ -1,9 +1,14 @@
 /*seccion-uno*/
 
+.separador-deportes{
+    background: #fff;
+    margin-top: 0px !important;
+}
+
 @media only screen and (max-width: 575px){
     .deportes{
         display: grid;
-        grid-template: repeat(5, minmax(150px, auto)) / 1fr;
+        grid-template: minmax(150px, auto) repeat(4, minmax(100px, auto)) / 1fr;
         grid-template-areas: "deportes1"
                              "deportes2"
                              "deportes3" 
@@ -22,14 +27,23 @@
     .texto-deportes1{
         display: block;
     }
+    .deportes2, .deportes3, .deportes4, .deportes5{
+        display: flex;
+    }
     .contenedor-imagen-deportes2,
     .contenedor-imagen-deportes3,
     .contenedor-imagen-deportes4,
     .contenedor-imagen-deportes5{
-        height: 230px;
+        width: 50%;
+        height: 100px;
+    }
+    .contenedor-titular-deportes{
+        font-size: 14px;
+        line-height: 1.3em;
+        width: 50%;
     }
     .titular-deportes2{
-        padding-top: 5px;
+        padding-left: 10px;
     }
 }
 
@@ -211,7 +225,7 @@
 
 .titular-deportes2{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     color: #D1D1D1;
     font-weight: 400;
 }
@@ -604,6 +618,7 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
     grid-template: minmax(20px, auto) minmax(300px, auto) / 3fr 1fr;
     grid-template-areas: "contenedor-titulo-videos vacio-inferior"
                                 "contenedor-videos publicidad-inferior";
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 991px){
