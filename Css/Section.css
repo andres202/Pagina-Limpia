@@ -7,7 +7,6 @@
 
 @media only screen and (max-width: 575px){
     .deportes{
-        display: grid;
         grid-template: minmax(150px, auto) repeat(4, minmax(100px, auto)) / 1fr;
         grid-template-areas: "deportes1"
                              "deportes2"
@@ -16,7 +15,7 @@
                              "deportes5";
     }
     .contenedor-imagen-deportes1{
-        height: 230px;
+        width: 100%;;
     }
     .contenedor-titular-deportes1{
         width: 100%;
@@ -30,12 +29,8 @@
     .deportes2, .deportes3, .deportes4, .deportes5{
         display: flex;
     }
-    .contenedor-imagen-deportes2,
-    .contenedor-imagen-deportes3,
-    .contenedor-imagen-deportes4,
-    .contenedor-imagen-deportes5{
+    .contenedor-imagen-deportes{
         width: 50%;
-        height: 100px;
     }
     .contenedor-titular-deportes{
         font-size: 14px;
@@ -45,11 +40,13 @@
     .titular-deportes2{
         padding-left: 10px;
     }
+    .uno1{
+        padding-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){
     .deportes{
-        display: grid;
         grid-template: repeat(3, minmax(150px, auto)) / repeat(2, 1fr);
         grid-template-areas: "deportes1 deportes1"
                              "deportes2 deportes3"
@@ -60,7 +57,6 @@
     }
     .contenedor-imagen-deportes1{
         width: 50%;
-        height: 200px;
         margin-right: 10px;
     }
     .contenedor-titular-deportes1{
@@ -69,30 +65,26 @@
     .texto-deportes1{
         display: block;
     }
-    .contenedor-imagen-deportes2,
-    .contenedor-imagen-deportes3,
-    .contenedor-imagen-deportes4,
-    .contenedor-imagen-deportes5{
-        height: 180px;
+    .contenedor-imagen-deportes{
+        width: 100%;
+    }
+    .contenedor-titular-deportes{
+        width: 100%;
     }
     .titular-deportes2{
-        padding-top: 5px;
-    }
+        padding-top: ;
+    } 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1100px){
-    .deportes{
-        display: grid;
+@media only screen and (min-width: 768px) {
+    .deportes{    
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         grid-template-areas: "deportes1 deportes3"
                              "deportes1 deportes4"
                              "deportes2 deportes5";
     }
     .contenedor-imagen-deportes1{
-        height: 260px;
-    }
-    .titular-deportes1{
-        padding-top: 5px;
+        width: 100%;
     }
     .texto-deportes1{
         display: none;
@@ -100,52 +92,19 @@
     .deportes2, .deportes3, .deportes4, .deportes5{
         display: flex;
     }
-    .contenedor-imagen-deportes2,
-    .contenedor-imagen-deportes3,
-    .contenedor-imagen-deportes4,
-    .contenedor-imagen-deportes5{
-        width: 60%;
-        height: 150px;
+    .contenedor-imagen-deportes{
+        width: 50%;
     }
     .contenedor-titular-deportes{
-        width: 40%;
+        width: 50%;
     }
     .titular-deportes2{
         padding-left: 10px;
     }
-}
-
-@media only screen and (min-width: 1100px){
-    .deportes{
-        display: grid;
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        grid-template-areas: "deportes1 deportes3"
-                             "deportes1 deportes4"
-                             "deportes2 deportes5";
-    }
-    .contenedor-imagen-deportes1{ 
-        height: 320px;
-    }
     .titular-deportes1{
         padding-top: 5px;
     }
-    .texto-deportes1{
-        display: none;
-    }
-    .deportes2, .deportes3, .deportes4, .deportes5{
-        display: flex;
-    }
-    .contenedor-imagen-deportes2,
-    .contenedor-imagen-deportes3,
-    .contenedor-imagen-deportes4,
-    .contenedor-imagen-deportes5{
-        width: 55%;
-        height: 170px;
-    }
-    .contenedor-titular-deportes{
-        width: 45%;
-    }
-    .titular-deportes2{
+    .uno1{
         padding-left: 10px;
     }
 }
@@ -164,16 +123,28 @@
     border-top: 1px solid #808080;
 }
 
-.deportes2{
-    grid-area: deportes2;
+.ratio16-9{
+    position: relative;
+    display: inline-block;
 }
 
-.contenedor-imagen-deportes1{
+.ratio16-9:before{
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+}
+
+.imagen-deportes1{
     background: url("../Recursos/Imágenes/Taekwondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.contenido {    
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+ }
 
 .titular-deportes1{
     font-family: 'Roboto', sans-serif;
@@ -190,37 +161,37 @@
     padding-top: 5px;
 }
 
-.contenedor-imagen-deportes2{
+.deportes2, .deportes3, .deportes4, .deportes5{
+    padding-top: 10px;
+    border-top: 1px solid #808080;
+}
+
+.imagen-deportes2{
     background: url("../Recursos/Imágenes/Futbol_Amateur.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.contenedor-imagen-deportes3{
+.imagen-deportes3{
     background: url("../Recursos/Imágenes/Tenis.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.contenedor-imagen-deportes4{
+.imagen-deportes4{
     background: url("../Recursos/Imágenes/Michael_Jordan.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.contenedor-imagen-deportes5{
+.imagen-deportes5{
     background: url("../Recursos/Imágenes/Bundesliga.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-}
-
-.deportes2, .deportes3, .deportes4, .deportes5{
-    padding-top: 10px;
-    border-top: 1px solid #808080;
 }
 
 .titular-deportes2{
@@ -228,6 +199,14 @@
     font-size: 1em;
     color: #D1D1D1;
     font-weight: 400;
+}
+
+.uno1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: rgb(150, 150, 150);
+    font-weight: 400;
+    margin-bottom: 2px;
 }
 
 /*sección-dos*/
@@ -637,7 +616,6 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
 
 @media only screen and (max-width: 991px){
     .seccion-cuatro{
-        display: grid;
         grid-template: minmax(20px, auto) 1fr repeat(2, minmax(300px, auto)) / 1fr;
         grid-template-areas: "contenedor-titulo-videos"
                              "vacio-inferior"
@@ -654,9 +632,8 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
     grid-gap: 10px;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 575px){
     .videos{
-        display: grid;
         grid-template: repeat(4, minmax(150px, auto)) / 1fr;
         grid-template-areas: "video1"
                              "video2"
@@ -678,28 +655,23 @@ table tr:first-of-type > th:nth-child(n):not(:first-of-type){
     margin-bottom: 10px;
 }
 
-.dimension-videos{
-    height: 270px;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+   
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
-
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .dimension-videos{
-        height: 380px !important;
-    }
-}
-
-/*@media only screen and (max-width: 575px){
-    .dimension-videos{
-        height: 270px;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .dimension-videos{
-        height: 270px;
-    }
-}*/
 
 .titulos-videos{
     font-family: 'Roboto', sans-serif;
