@@ -112,14 +112,14 @@
 .deportes{
     display: grid;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 20px;
     background: #075584;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .deportes1{
     grid-area: deportes1;
-    padding-top: 10px;
+    padding-top: 20px;
     border-top: 1px solid #808080;
 }
 
@@ -162,7 +162,7 @@
 }
 
 .deportes2, .deportes3, .deportes4, .deportes5{
-    padding-top: 10px;
+    padding-top: 20px;
     border-top: 1px solid #808080;
 }
 
