@@ -376,10 +376,14 @@
                              "entretencion4"
                              "entretencion5"
                              "entretencion6";
+        row-gap: 15px;
+    }
+    .texto-principal-entretencion{
+        padding-bottom: 15px;
     }
     .entretencion3, .entretencion4, .entretencion5, .entretencion6{
         display: flex;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
     .entretencion5{
         border-bottom: 1px solid #448AFF;
