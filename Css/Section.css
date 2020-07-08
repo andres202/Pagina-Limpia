@@ -5,18 +5,29 @@
     margin-top: 0px !important;
 }
 
+@media only screen and (max-width: 355px){
+    .deportes{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 356px) and (max-width: 575px){
+    .deportes{
+        font-size: 15px;
+    }
+}
+
 @media only screen and (max-width: 575px){
     .deportes{
-        grid-template: minmax(150px, auto) repeat(4, minmax(100px, auto)) / 1fr;
+        grid-template: minmax(150px, auto) repeat(4, minmax(80px, auto)) / 1fr;
         grid-template-areas: "deportes1"
                              "deportes2"
                              "deportes3" 
                              "deportes4"
                              "deportes5";
-        font-size: 15px;
     }
     .contenedor-imagen-deportes1{
-        width: 100%;;
+        width: 100%;
     }
     .contenedor-titular-deportes1{
         width: 100%;
@@ -141,7 +152,7 @@
 .contenido {    
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
- }
+}
 
 .titular-deportes1{
     font-family: 'Martel', serif;
@@ -246,26 +257,11 @@
     padding: 0px 10px;
 }
 
-@media only screen and (max-width: 575px) {
-    .contenedor-entretencion{
-        display: grid;
-        grid-template: minmax(300px, auto) repeat(5, minmax(150px, auto)) / 1fr;
-        grid-template-areas: "entretencion1"
-                             "entretencion2"
-                             "entretencion3"
-                             "entretencion4"
-                             "entretencion5"
-                             "entretencion6";
-    }
-}
-
 .imagen-principal-entretencion{
     background: url("../Recursos/Imágenes/Festival_Cine_Logo_Definitivo.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
-    height: 100%;
 }
 
 .entretencion2{
@@ -276,7 +272,7 @@
 
 .titular-principal-entretencion{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 500;
     color: #000000;
     padding: 5px 0px;
@@ -284,69 +280,120 @@
 
 .texto-principal-entretencion{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.25;
     color: #000000;
     padding: 5px 0px;
 }
 
-.entretencion2{
+.entretencion2, .entretencion3, .entretencion4{
     border-bottom: 1px solid #448AFF;
 }
 
-@media only screen and (min-width: 576px) {
-    .entretencion1{
-        border-bottom: 1px solid #448AFF;
-    }
+.ratio4-3{
+    position: relative;
+    display: inline-block;
 }
 
-@media only screen and (max-width: 575px) {
-    .entretencion5{
-        border-bottom: 1px solid #448AFF;
-    }
-    .titular-noticias-entretencion{
-        width: 200px;
-    }
-    .entretencion4 .imagen-noticias-entretencion,
-    .entretencion6 .imagen-noticias-entretencion{
-        float: right;
-        margin-right: 0px;
-    }
-    .entretencion4 .titular-noticias-entretencion,
-    .entretencion6 .titular-noticias-entretencion{
-        float: right;
-        clear: right;
-        margin-top: 5px;
-    }
+.ratio4-3:before{
+    content: '';
+    display: block;
+    padding-top: 75%;
 }
 
-@media only screen and (min-width: 768px) {
-    .entretencion3, .entretencion4, .entretencion5, .entretencion6{
-        display: flex;
-    }
+.imagen-entretencion3{
+    background: url("../Recursos/Imágenes/Cartel-de-Hollywood-1.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
-.imagen-noticias-entretencion{
-    width: 200px;
-    height: 140px;
-    margin-right: 10px;
+.imagen-entretencion4{
+    background: url("../Recursos/Imágenes/Innerspeaker.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.imagen-entretencion5{
+    background: url("../Recursos/Imágenes/Teatro_Municipal_Santiago.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.imagen-entretencion6{
+    background: url("../Recursos/Imágenes/Día_de_la_Tierra.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .titular-noticias-entretencion{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
     color: #000000;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
+    .contenedor-entretencion{
+        font-size: 17px;
+    }
+    .entretencion1{
+        border-bottom: 1px solid #448AFF;
+    }
+    .entretencion3, .entretencion4, .entretencion5, .entretencion6{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .contenedor-imagen-entretencion{
+        width: 55%;
+    }    
+    .contenedor-texto-entretencion{
+        width: 45%;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .contenedor-entretencion{
+        font-size: 17px;
+    }
+    .entretencion1{
+        border-bottom: 1px solid #448AFF;
+    }
+    .contenedor-imagen-entretencion{
+        width: 65%;
+    }
     .titular-noticias-entretencion{
         padding-bottom: 5px;
     }
 }
 
-.entretencion3, .entretencion4{
-    border-bottom: 1px solid #448AFF;
+@media only screen and (max-width: 575px){
+    .contenedor-entretencion{
+        font-size: 16px;
+    }
+    .contenedor-entretencion{
+        grid-template: minmax(200px, auto) repeat(5, minmax(80px, auto)) / 1fr;
+        grid-template-areas: "entretencion1"
+                             "entretencion2"
+                             "entretencion3"
+                             "entretencion4"
+                             "entretencion5"
+                             "entretencion6";
+    }
+    .entretencion3, .entretencion4, .entretencion5, .entretencion6{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .entretencion5{
+        border-bottom: 1px solid #448AFF;
+    }
+    .contenedor-imagen-entretencion{
+        width: 50%;
+    }    
+    .contenedor-texto-entretencion{
+        width: 50%;
+        padding-left: 10px;
+    }
 }
 
 /*separador*/

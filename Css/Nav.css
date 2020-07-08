@@ -45,11 +45,11 @@ nav label:hover{
     letter-spacing: 1px;
 }
 
-.menu li img{
+/*.menu li img{
     display: none;
     width: 30px;
     height: 30px;
-}
+}*/
 
 .margen-inferior-nav{
     height: 20px;
@@ -91,9 +91,9 @@ nav label:hover{
         padding: 15px 0;
         margin-right: auto;
     }
-    .menu li img{
+    /*.menu li img{
         display: block;
         padding-top: 8px;
         padding-right: 10px;
-    }
+    }*/
 }
